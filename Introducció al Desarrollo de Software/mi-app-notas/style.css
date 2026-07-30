@@ -1,0 +1,60 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+h1 {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+.login, .acciones {
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.columna {
+    flex: 1;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.nota {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dark {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .nota, .dark .login {
+    background: #2c2c2c;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>App de Estudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📝 App de Estudio</h1>
+
+<div class="login">
+    <h2>🔐 Login</h2>
+    <input id="email" placeholder="Correo">
+    <input id="password" type="password" placeholder="Contraseña">
+    <button onclick="registrar()">Registrarse</button>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+    <p id="usuario"></p>
+</div>
+
+<div class="acciones">
+    <button onclick="toggleTema()">🌙 Modo oscuro</button>
+    <button onclick="exportarPDF()">🧾 Exportar PDF</button>
+    <button onclick="compartir()">📤 Compartir</button>
+    <button onclick="resumenSemanal()">📊 Resumen</button>
+</div>
+
+<div class="container">
+
+    <div class="columna">
+        <h2>📝 Nueva Nota</h2>
+
+        <input id="titulo" placeholder="Título">
+        <textarea id="contenido" placeholder="Contenido"></textarea>
+        <input id="etiquetas" placeholder="Etiquetas">
+
+        <input type="date" id="fecha">
+        <input type="time" id="hora">
+
+        <select id="materia">
+            <option>General</option>
+            <option>Matemáticas</option>
+            <option>Programación</option>
+            <option>Historia</option>
+        </select>
+
+        <button onclick="agregarNota()">Agregar</button>
+    </div>
+
+    <div class="columna">
+        <h2>📂 Notas</h2>
+        <input placeholder="Buscar..." onkeyup="buscarNotas()" id="buscar">
+        <div id="notas"></div>
+    </div>
+
+    <div class="columna">
+        <h2>📅 Calendario</h2>
+        <div id="calendario"></div>
+    </div>
+
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
