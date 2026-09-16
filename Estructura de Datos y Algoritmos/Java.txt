@@ -1,0 +1,49 @@
+Java
+string: cadena
+
+paquetes:
+out
+Scanner - clase
+
+ciclo:
+for : ejecución -para muchos datos
+while: mientras
+if : si- decisión
+else: sino - decisión
+swith: lista de opciones
+
+system.nextint - datos ingresados de forma manual
+
+decisión: si o no
+ejecución: hacer
+
+for: para - hacer
+
+break: rompe ciclo
+void: vacío
+boolean: falso o verdadero
+
+array: matriz
+
+arreglos son lo mismo que vectores
+
+int [] declaración
+.lengt llegar a una parte del vector
+
+Variables temporales:
+temp
+aux
+res
+
+i++:incremento
+Parse: convertir
+
+
+this: actúa como una referencia al objeto actual en un método o constructor. Se usa principalmente para distinguir atributos de clase de parámetros, invocar otros constructores (encadenamiento) y pasar el objeto actual como argumento.
+
+
+Metodos de ordenacion
+Shell
+binario
+ordenación rápida
+lineal
